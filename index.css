@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+body {
+  background: linear-gradient(
+    0deg,
+    hsl(240, 73%, 65%) 50%,
+    hsl(273, 75%, 66%) 100%
+  );
+  background-repeat: no-repeat;
+  font-family: "Kumbh Sans", sans-serif;
+  padding: 2rem;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+section {
+  background: white;
+  border-radius: 2rem;
+  padding: 2rem;
+  max-width: 900px;
+  position: relative;
+}
+
+.image {
+  width: 300px;
+  margin: auto; 
+  /* To remove the excess space, add position:absolute; 
+    and give your h4 a desired margin-top (I used 7rem)
+  */
+  position: absolute;
+  transform: translateY(-70%);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.qa {
+  border-bottom: 2px solid hsl(240, 5%, 91%);
+}
+
+.answer {
+  display: none;
+}
+
+h4 {
+  color: hsl(237, 12%, 33%);
+}
+
+p {
+  color: hsl(240, 6%, 50%);
+}
+
+@media (min-width: 800px) {
+  section {
+    display: flex;
+  }
+
+  .image {
+    transform: translateY(0);
+  }
+}
+
+/* 
+- Very dark desaturated blue: hsl(238, 29%, 16%)
+- Soft red: hsl(14, 88%, 65%)
+
+#### Gradient
+
+Background gradient:
+
+- Soft violet: hsl(273, 75%, 66%)
+- Soft blue: hsl(240, 73%, 65%)
+
+### Neutral
+
+#### Text
+
+- Very dark grayish blue: hsl(237, 12%, 33%)
+- Dark grayish blue: hsl(240, 6%, 50%)
+
+#### Dividers
+
+- Light grayish blue: hsl(240, 5%, 91%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 12px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
